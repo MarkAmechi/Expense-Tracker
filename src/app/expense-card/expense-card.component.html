@@ -1,0 +1,27 @@
+<form>
+    <div class="col">
+      <select id="inputMonth" class="form-control" name="monthSelect" [(ngModel)]="monthSelect">
+          <option selected>Select month</option>
+          <option>January</option>
+          <option>February</option>
+          <option>March</option>
+          <option>April</option>
+          <option>May</option>
+          <option>June</option>
+          <option>July</option>
+          <option>August</option>
+          <option>September</option>
+          <option>October</option>
+          <option>November</option>
+          <option>December</option>
+      </select>
+  </div>
+  <div class="col">
+    <select id="inputYear" class="form-control" name="yearSelect" [(ngModel)]="yearSelect">
+      <option *ngFor="let year of years">{{year}}</option>
+    </select>
+  </div>
+  </form>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let expense of expenses"></li>
+  </ul>

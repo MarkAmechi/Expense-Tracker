@@ -1,0 +1,16 @@
+<form>
+    <input type="text" class="form-control" placeholder="expense amount"  name="expenseAmount" [(ngModel)]="expenseAmount">
+    <div class="col">
+        <select id="inputCategory" class="form-control" name="categorySelect" [(ngModel)]="categorySelect">
+            <option selected>Select month</option>
+            <option>Groceries</option>
+            <option>Gas</option>
+            <option>Food</option>
+            <option>Personal Case</option>
+            <option>Services</option>
+            <option>Luxuries</option>
+            <option>Clothing</option>
+        </select>
+    </div>
+    <input type="text" class="form-control" ngbDatepicker [(ngModel)]="date"/>
+</form>>
